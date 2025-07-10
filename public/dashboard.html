@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schulnoten Rechner - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mein Dashboard <span id="username-display"></span></h1>
+    
+    <form id="grades-form">
+      <div class="grade-section">
+        <h2>1. Halbjahr (30%)</h2>
+        <div class="grade-input">
+          <select id="semester1" required>
+            <option value="">-- Note wählen --</option>
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">E4</option>
+            <option value="G2">G2</option>
+            <option value="G3">G3</option>
+            <option value="G4">G4</option>
+            <option value="G5">G5</option>
+            <option value="G6">G6</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="grade-section">
+        <h2>2. Halbjahr (30%)</h2>
+        <div class="grade-input">
+          <select id="semester2" required>
+            <option value="">-- Note wählen --</option>
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">E4</option>
+            <option value="G2">G2</option>
+            <option value="G3">G3</option>
+            <option value="G4">G4</option>
+            <option value="G5">G5</option>
+            <option value="G6">G6</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="grade-section">
+        <h2>Prüfungen (40%)</h2>
+        <div class="grade-input">
+          <label for="writtenExam">Schriftlich (20%):</label>
+          <select id="writtenExam" required>
+            <option value="">-- Note wählen --</option>
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">E4</option>
+            <option value="G2">G2</option>
+            <option value="G3">G3</option>
+            <option value="G4">G4</option>
+            <option value="G5">G5</option>
+            <option value="G6">G6</option>
+          </select>
+        </div>
+        <div class="grade-input">
+          <label for="oralExam">Mündlich (20%):</label>
+          <select id="oralExam" required>
+            <option value="">-- Note wählen --</option>
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">E4</option>
+            <option value="G2">G2</option>
+            <option value="G3">G3</option>
+            <option value="G4">G4</option>
+            <option value="G5">G5</option>
+            <option value="G6">G6</option>
+          </select>
+        </div>
+      </div>
+      
+      <button type="submit">Berechnen</button>
+    </form>
+    
+    <div class="result">
+      <h2>Ergebnis</h2>
+      <p>Endnote: <span id="final-grade">-</span></p>
+      <p>Prognose: <span id="prognosis">-</span></p>
+    </div>
+    
+    <a href="#" id="logout">Ausloggen</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
